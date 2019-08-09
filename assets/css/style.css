@@ -1,0 +1,123 @@
+html {
+    position: relative;
+    overflow: hidden;
+    font-family: 'Creepster', cursive !important;
+
+}
+body {
+    background-image: url("../images/black.jpeg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    z-index: -1;
+}
+.titlescreen {
+    background-image: url("../images/scroll_burned.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 2rem;
+    left: 20rem;
+    height: 58rem;
+    opacity: 0;
+    animation-name: titlescroll;
+    transition-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.slowlyone {
+    color:rgb(114, 12, 114);
+    word-spacing: 0.2em;    
+    font-size:4.5em;
+    left: 3.5em;
+    width: 12em;
+    text-align: center;
+    position: relative;
+    top: 2.5em;
+    animation-name: slowlyone;
+    transition-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.slowlytwo {
+    color:rgb(116, 63, 116);
+    word-spacing: 0.2em;
+    font-size:4em;
+    left: 0.1em;
+    width: 20em;
+    text-align: center;
+    position: relative;
+    top: 3.5em;
+    opacity: 0;
+}
+.slowlytwoo {
+    animation-name: slowlytwoo;
+    transition-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.slowlythree {
+    color:rgb(116, 63, 116);
+    word-spacing: 0.2em;
+    font-size:3.5em;
+    left: 0.6em;
+    width: 25em;
+    text-align: center;
+    position: relative;
+    top: 4.5em;
+    opacity: 0;
+}
+.slowlythreee {
+    animation-name: slowlythreee;
+    transition-timing-function: ease-in;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+
+.btn-lg1 {
+    background:rgb(116, 63, 116);
+    word-spacing: 0.2em;
+    font-size:3.5em;
+    left: 6.5em;
+    width: 5em;
+    text-align: center;
+    position: relative;
+    top: 5.75em;
+}
+.btn-lg2 {
+    background:rgb(116, 63, 116);
+    word-spacing: 0.2em;
+    font-size:3.5em;
+    left: 12.5em;
+    width: 5em;
+    text-align: center;
+    position: relative;
+    top: 4em;
+}
+
+@keyframes slowlyone {
+    0% { transform: rotate(0deg); opacity:1; }
+    25% { transform: rotate(10deg); opacity: 1; }
+    50% { transform: rotate(-10deg); }  
+    100% { transform: rotate(0deg); opacity:1; }
+}
+@keyframes titlescroll {
+    0% { transform: translateY(0); opacity:1;}
+    50% { transform: translateY(30px); }  
+    100% { transform: translateY(0); opacity:1;}
+}
+
+@keyframes slowlytwoo {
+    0% { transform: translateY(0); opacity: 0.6; }
+    50% { transform: translateY(20px); }  
+    100% { transform: translateY(0); opacity:1; }
+}
+@keyframes slowlythreee {
+    0% { transform: translateY(0); opacity: 0.6; }
+    50% { transform: translateY(20px); }  
+    100% { transform: translateY(0); opacity:1; }
+}
