@@ -27,19 +27,81 @@ body {
     animation-iteration-count: infinite;
 }
 
+#introtext {
+    display: block;
+}
 .slowlyone {
     color:rgb(114, 12, 114);
     word-spacing: 0.2em;    
-    font-size:4.5em;
-    left: 3.5em;
+    font-size:6.5em;
+    left: .5em;
     width: 12em;
     text-align: center;
     position: relative;
-    top: 2.5em;
+    top: 1.8em;
     animation-name: slowlyone;
     transition-timing-function: ease-in;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+}
+.slowlyoneone {
+    color:rgb(114, 12, 114);
+    word-spacing: 0.2em;    
+    font-size:3.5em;
+    width: 12em;
+    left: 1.2em;
+    text-align: center;
+    position: absolute;
+    top: 5.8em;
+}
+.slowlytwotwo{
+    color:rgb(114, 12, 114);
+    word-spacing: 0.2em;    
+    font-size:3.5em;
+    width: 12em;
+    text-align: center;
+    position: absolute;
+    top: 6.4em;
+}
+.slowlythreethree {
+    color:rgb(114, 12, 114);
+    word-spacing: 0.2em;    
+    font-size:3.5em;
+    width: 12em;
+    left: 2em;
+    text-align: center;
+    position: absolute;
+    top: 7em;
+}
+.slowlyfourfour {
+    color:rgb(114, 12, 114);
+    word-spacing: 0.2em;    
+    font-size:3.5em;
+    width: 12em;
+    left: 2em;
+    text-align: center;
+    position: absolute;
+    top: 8.2em;
+}
+.slowlyfivefive {
+    color:rgb(114, 12, 114);
+    word-spacing: 0.2em;    
+    font-size:3.5em;
+    width: 12em;
+    left: 4em;
+    text-align: center;
+    position: absolute;
+    top: 9.6em;
+}
+.slowlysixsix {
+    color:rgb(114, 12, 114);
+    word-spacing: 0.2em;    
+    font-size:3.5em;
+    width: 12em;
+    left: 4em;
+    text-align: center;
+    position: absolute;
+    top: 11.6em;
 }
 
 .slowlytwo {
@@ -63,8 +125,8 @@ body {
     color:rgb(116, 63, 116);
     word-spacing: 0.2em;
     font-size:3.5em;
-    left: 0.6em;
-    width: 25em;
+    left: 5.6em;
+    width: 15em;
     text-align: center;
     position: relative;
     top: 4.5em;
@@ -82,21 +144,11 @@ body {
     background:rgb(116, 63, 116);
     word-spacing: 0.2em;
     font-size:3.5em;
-    left: 6.5em;
+    left: 9em;
     width: 5em;
     text-align: center;
     position: relative;
-    top: 5.75em;
-}
-.btn-lg2 {
-    background:rgb(116, 63, 116);
-    word-spacing: 0.2em;
-    font-size:3.5em;
-    left: 12.5em;
-    width: 5em;
-    text-align: center;
-    position: relative;
-    top: 4em;
+    top: 5em;
 }
 
 @keyframes slowlyone {

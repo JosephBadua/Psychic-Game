@@ -8,25 +8,37 @@
     <link rel="stylesheet" type="text/css" href="../Psychic-Game/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="../Psychic-Game/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet">
-    <script src="../Psychic-Game/assets/javascript/game.js"></script>
    
-    <title>Merasmus' Mystifying Game of Marvelous Marvels</title>
+    <title>Psychic-Game</title>
 </head>
 <body>
 <first> <!--TitleScreen-->
-    <div class="titlescreen" id="scroll">
-        <h1 class="slowlyone" id="slowly1">Merasmus' Mystifying Game of Miraculous Marvels</h1>
+<div class="titlescreen" id="scroll">
+        <h1 class="slowlyone" id="slowly1">Psychic-Game</h1>
+    <div id="introtext">
         <br>
-        <h2 class="slowlytwo slowlytwoo" id="slowly2">A LETTER RESTS WITHIN MY HEAD</h2>       
+        <h2 class="slowlytwo slowlytwoo" id="slowly2">I'M THINKING OF A RANDOM LETTER</h2>       
         <br>
-        <h3 class="slowlythree slowlythreee" id="slowly3">GUESS IT WRONG AND YOU'LL BE DEAD</h3>
+        <h3 class="slowlythree slowlythreee" id="slowly3">PRESS ANY LETTER ON THE KEYBOARD TO GUESS WHAT IT IS</h3>
         <br>
-        <button type="button" class="btn btn-success btn-lg1" id="button1">Play</button>
-        <br>
-        <button type="button" class="btn btn-danger btn-lg2" id="button2">Rules</button>
+        <button type="button" class="btn btn-success btn-lg1" id="button1" onclick="hide()">Play</button>
     </div>
+    <div id="maingame">
+        <p class="slowlyoneone" id="user"></p>
+        <br>
+        <p class="slowlytwotwo" id="system"></p>
+        <br>
+        <p class="slowlythreethree" id="wins"></p>
+        <br>
+        <p class="slowlyfourfour" id="losses"></p>
+        <br>
+        <p class="slowlyfivefive" id="guesses"></p>
+        <br>
+        <p class="slowlysixsix" id="guessessofar"></p>
+    </div>
+</div>
 </first>
     
-
+<script type="text/javascript" src="../Psychic-Game/assets/javascript/game.js"></script>
 </body>
 </html>

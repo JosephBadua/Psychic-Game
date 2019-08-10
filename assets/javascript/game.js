@@ -1,43 +1,59 @@
-var Wins = 0
-var Losses = 0
-var GuessesLeft = 0
-
-var initialText = document.getElementById("slowlyone");
-
-
+var wongames = 0
+var lostgames = 0
+var guessesLeft = 9
 
 var listLetters = ["a","b","c","d","e",
 "f","g","h","i","j","k","l","m","n","o",
-"p","q","r","s","t","u","v","w","x","y","z"]
+"p","q","r","s","t","u","v","w","x","y","z"];
 
-document.getElementById("button1").onclick = function() {
-    
+
+var directionsText = document.getElementById("introtext");
+var userChoiceText = document.getElementById("user");
+var computerChoiceText = document.getElementById("system");
+var wins = document.getElementById("wins");
+var losses = document.getElementById("losses");
+var guesses = document.getElementById("guesses");
+var guessesMade = document.getElementById("guessessofar");
+
+function hide(){
+  directionsText.textContent= "";
 };
 
+var computerChoice = listLetters[Math.floor(Math.random() * listLetters.length)];
+console.log(computerChoice);
+
+
 document.onkeyup = function(event) {
+  var guessesMade = [];
+  var userGuess = event.key;
 
-    var userGuess = event.key;
-
-    var computerGuess = listLetters[Math.floor(Math.random() * listLetters.length)];
-
-    if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
-
-      if ((userGuess === "r" && computerGuess === "s") ||
-        (userGuess === "s" && computerGuess === "p") || 
-        (userGuess === "p" && computerGuess === "r")) {
-        wins++;
-      } else if (userGuess === computerGuess) {
-        ties++;
-      } else {
-        losses++;
-      }
-
-
-      // Display the user and computer guesses, and wins/losses/ties.
-      userChoiceText.textContent = "You chose: " + userGuess;
-      computerChoiceText.textContent = "The computer chose: " + computerGuess;
-      winsText.textContent = "wins: " + wins;
-      lossesText.textContent = "losses: " + losses;
-      tiesText.textContent = "ties: " + ties;
+  if ((userGuess === "a") || (userGuess === "b") || (userGuess === "c") || (userGuess === "d") || (userGuess === "e") || (userGuess === "f") || (userGuess === "g") || (userGuess === "h") || (userGuess === "i") ||
+  (userGuess === "j") || (userGuess === "k") || (userGuess === "l") || (userGuess === "m") || (userGuess === "n") || (userGuess === "o") || (userGuess === "p ") || (userGuess === "q") || (userGuess === "r") ||
+  (userGuess === "s") || (userGuess === "t") || (userGuess === "u") || (userGuess === "v") || (userGuess === "w") || (userGuess === "x") || (userGuess === "y") || (userGuess === "z")) {
+    if ((userGuess === "a" && computerChoice === "a") || (userGuess === "b" && computerChoice === "b") || (userGuess === "c" && computerChoice === "c") || (userGuess === "d" && computerChoice === "d") || (userGuess === "e" && computerChoice === "e") || (userGuess === "f" && computerChoice === "f") || (userGuess === "g" && computerChoice === "g") || (userGuess === "h" && computerChoice === "h") || (userGuess === "i" && computerChoice === "i") ||
+    (userGuess === "j" && computerChoice === "j") || (userGuess === "k" && computerChoice === "k") || (userGuess === "l" && computerChoice === "l") || (userGuess === "m" && computerChoice === "m") || (userGuess === "n" && computerChoice === "n") || (userGuess === "o" && computerChoice === "o") || (userGuess === "p" && computerChoice === "p") || (userGuess === "q" && computerChoice === "q") || (userGuess === "r" && computerChoice === "r") ||
+    (userGuess === "s" && computerChoice === "s") || (userGuess === "t" && computerChoice === "t") || (userGuess === "u" && computerChoice === "u") || (userGuess === "v" && computerChoice === "v") || (userGuess === "w" && computerChoice === "w") || (userGuess === "x" && computerChoice === "x") || (userGuess === "y" && computerChoice === "y") || (userGuess === "z" && computerChoice === "z")) {
+      wongames++;
+      guessesLeft = 9;
+      guessesMade = [];
+      computerChoice;
     }
-  };
+    if (userGuess != computerChoice) {
+      guessesLeft--;
+      guessesMade.push(userGuess);
+
+    } 
+    if (guessesLeft === 0) {
+      lostgames++;
+      guessesLeft = 9; 
+      guessesMade = [];
+      computerChoice;
+    }
+
+    user.textContent = "You've chosen: " + userGuess;
+    wins.textContent = "You've won: " + wongames + " games";
+    losses.textContent = "You've lost: " + lostgames + " games";
+    guesses.textContent = "You only have " + guessesLeft + " guesses left";
+    guessessofar.textContent = "So far, you have guessed: " + guessesMade.join(", ");
+  }
+};
