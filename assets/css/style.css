@@ -38,7 +38,7 @@ body {
     width: 12em;
     text-align: center;
     position: relative;
-    top: 1.8em;
+    top: 1.9em;
     animation-name: slowlyone;
     transition-timing-function: ease-in;
     animation-duration: 4s;
@@ -125,7 +125,7 @@ body {
     color:rgb(116, 63, 116);
     word-spacing: 0.2em;
     font-size:3.5em;
-    left: 5.6em;
+    left: 4em;
     width: 15em;
     text-align: center;
     position: relative;

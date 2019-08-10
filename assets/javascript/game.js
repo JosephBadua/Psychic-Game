@@ -12,16 +12,19 @@ function hide(){
     if( listLetters.indexOf(userGuess) == -1 ){
       return;
     }
+    guessesDone.push(userGuess);
     if (userGuess === answer) {
       wongames++;
       alert("You got it right!")
-      reset();
+      guessesLeft = 10;
+      answer = newchoice();
+      guessesDone = [];
+      console.log(answer);
+      
     }
 
     if (userGuess != answer) {
       guessesLeft--;
-      guessesDone.push(userGuess);
-      
     } 
     if (guessesLeft === 0) {
       lostgames++;
