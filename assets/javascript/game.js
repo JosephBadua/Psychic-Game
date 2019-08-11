@@ -12,20 +12,23 @@ function hide(){
     if( listLetters.indexOf(userGuess) == -1 ){
       return;
     }
-    guessesDone.push(userGuess);
     if (userGuess === answer) {
       wongames++;
       alert("You got it right!")
-      guessesLeft = 10;
+      guessesLeft = 9;
       answer = newchoice();
       guessesDone = [];
-      console.log(answer);
-      
-    }
+      console.log(answer); 
+    } else {
+      if (guessesDone.includes(userGuess)) {
+          guesses.textContent = guessesLeft;
+      }
+      else {
+          guessesDone.push(userGuess);
+          guessesLeft--;
+      }
+  }
 
-    if (userGuess != answer) {
-      guessesLeft--;
-    } 
     if (guessesLeft === 0) {
       lostgames++;
       alert("You lost! Try again!")
