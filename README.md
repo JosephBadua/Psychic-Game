@@ -10,4 +10,4 @@ This is a psychic test. See if you can guess the letter the computer has chosen 
 - JavaScript
 
 ## Screenshot
-![Psychic Game Image](https://imgur.com/NVEPsC3)
+![Psychic Game Image](https://i.imgur.com/NVEPsC3.png)
