@@ -1,6 +1,6 @@
 # Psychic-Game
 
-### Link to Deployed Link
+### Link to Deployed Website
 [Joseph's Psychic Game](https://josephbadua.github.io/Psychic-Game/)
 
 ## Installation and Getting Started
