@@ -13,6 +13,10 @@ From there, simply run the application on your default browser as it requires no
 ![LandingPage](https://i.imgflip.com/3opjxn.gif)
 
 ## Technologies Used
+- HTML
+- CSS
+- Javascript 
+- Bootstrap
 
 HTML5        |  CSS3 |  Javascript  |  Bootstrap
 :-------------------------:|:-------------------------: |:-------------------------: |:-------------------------:
