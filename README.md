@@ -1,5 +1,8 @@
 # Psychic-Game
 
+### Link to Deployed Link
+[Joseph's Psychic Game](https://josephbadua.github.io/Psychic-Game/)
+
 ## Installation and Getting Started
 
 Using your <strong>CLI,</strong> (bash for Windows, terminal for Mac) clone the repository to your local machine 
